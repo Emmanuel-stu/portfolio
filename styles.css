@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #D2B48C;
+  color: #4B3621; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+}
+
+header {
+  background: #4B3621;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  background: #4B3621; 
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #FFE4B5; 
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  background: #FFE4C4;
+  color: #4B3621;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1 1 calc(33% - 20px);
+  max-width: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  width: 1050px;
+  border-radius: 8px;
+}
+
+#console {
+  .projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project {
+    background: #FFE4C4;
+    color: #4B3621;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1 1 calc(33% - 20px);
+    max-width: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .project img {
+    width: 1050px;
+    border-radius: 8px;
+  }
+}
+
+p a {
+  color: white;
+  text-align: center;
+}
+
+.header img {
+  border-radius: 200%;
+  height: 170px;
+  width: 170px;
+}
+
+#skills{
+  text-align: center;
+}
+
+#scrollUpBtn {
+  height: 50px;
+  width: 50px;
+  position: right;
+}
+
+footer {
+  background: #4B3621; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
