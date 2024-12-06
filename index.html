@@ -1,53 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple and Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>My Portfolio</h1>
-      <img src="ss.jpg" alt="ss.jpg">
-      <p>Welcome to my simple and minimal portfolio website.</p>
-    </div>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
+    <header class="header">
+        <h1><strong>John Emmanuel Dinglasan</strong></h1>
+        <img src="portfolio/pic.jpg" alt="pic.jpg">
+        <p> <strong>Third-Year BSIT Student | Aspiring Web Developer and Network Engineer</strong></p>
+    </header>
+
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hello everything! <strong> I am John Emmanuel A. Dinglasan,</strong> a passionate individual exploring web development and other IT fields. I enjoy building user-friendly and functional task and projects.</p>
+        <h2>About Me</h2>
+        <p> <strong>Hello! My name is John Emmanuel Dinglasan, and I am currently a third-year student pursuing a Bachelor of Science in Information Technology (BSIT) at Philippine Christian University. I have a strong passion for technology and a deep interest in web development. Throughout my studies, I have gained valuable skills in programming, database management, networking and hardware development. </strong></p>
     </section>
+
     <section id="projects">
-      <h2>Performance task</h2>
-      <div class="project">
-        <h3>Activity</h3>
-        <p>Bootstrap</p>
-        <img src="activity.png" alt="activity.png">
-      </div>
-      <div class="projectss">
-        <h3>Baby thesis</h3>
-        <p> Pending E-Library </p>
-        <img src="home.png" alt="home.png">
-        <img src="login.png" alt="login.png">
-      </div>
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="portfolio/cisco.png" alt="Project 1">
+                <h3>NETWORKING/CISCO IOS</h3>
+            </div>
+            <div class="project">
+                <img src="portfolio/home.png" alt="Project 2">
+                <h3>WEB DEVELOPMENT/e-Library Website</h3>
+            </div>
+            <div class="project">
+                <img src="portfolio/db.png" alt="Project 3">
+                <h3>DATABASE/e-Library</h3>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="https//gmail.com">jeadinglasan@pcu.edu.ph</a></p>
-      <p>Phone: +123 456 7890</p>
+
+    <section id="console">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="portfolio/Menu.png" alt="Project 1">
+                <h3>Java Console Project</h3>
+            </div>
+            <div class="project">
+                <img src="portfolio/Dessert.png" alt="Project 2">
+                <h3>Java Console Project</h3>
+            </div>
+            <div class="project">
+                <img src="portfolio/Drinks.png" alt="Project 3">
+                <h3>Java Console Project</h3>
+            </div>
+            <div class="project">
+                <img src="portfolio/Receipt .png" alt="Project 3">
+                <h3>Java Console Project</h3>
+            </div>
+            <p><a href="https://drive.google.com/file/d/1hAtgNc3MgEm1C64KVCYyrQ1ZLqMFg5Pz/view?usp=sharing" target="_blank" title="Direct to the link"> <strong>Arduino Uno link: <br> https://drive.google.com/file/d/1hAtgNc3MgEm1C64KVCYyrQ1ZLqMFg5Pz/view?usp=sharing </strong></a></p>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-  </footer>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <strong><p>Networking</p></strong>
+            <strong><p>Web Development</p></strong>
+            <strong><p>Database Management</p></strong>
+            <strong><p>Java Console Project</p></strong>
+            <strong><p>Arduino Uno</p></strong>
+        </ul>
+
+        <h2>Contacts</h2>
+        <ul>
+           <strong> <p>Email: jeadinglasan@pcu.edu.ph </p></strong>
+           <strong> <p>CP#: +63-950-502-4428</p></strong>
+        </ul>
+        
+    </section>
+
+    <button id="scrollUpBtn" title="Return to top"><strong>↑</strong></button>
+
+    <script>
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        };
+
+        scrollUpBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
+    <footer>
+        <p>© 2024 John Emmanuel Dinglasan | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
